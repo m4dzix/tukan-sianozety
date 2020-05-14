@@ -116,6 +116,19 @@ padding: 3px;
   display: inline-block;
 }
 
+.informations{
+  border-top: 2px solid black;
+  margin-top: 8%;
+  padding: 5%;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.zadatek{
+  margin: 20px auto;
+  font-weight: bold;
+}
  
 footer{
   width: 100vw;

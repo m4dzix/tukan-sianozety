@@ -98,7 +98,10 @@ section{
   font-size: 50px;
   border-bottom: 3px solid rgb(32, 204, 195);
 }
-
+  .holenderski h3{
+    font-size: 50px;
+    border-bottom: 3px solid rgb(32, 204, 195);
+  }
 .description{
   width: 50%;
   height: 60%;
