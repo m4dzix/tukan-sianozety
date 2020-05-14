@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domki w Sianozetach</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/domki/domki.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <header></header>
+
+    <nav class="clearfix">
+
+      <div class="logo">
+        <a href="#"><img src="/images/toucan1.png" alt=""></a>
+      </div>   
+      <ul class="clearfix"> 
+        <li class="menu"><a href="/regulamin/regulamin.html">regulamin</a></li>
+        <li class="menu"><a href="#">domki</a></li>
+        <li class="menu"><a href="#">cennik</a></li>
+        <li class="menu"><a href="/kontakt/kontakt.html">kontakt</a></li>
+        <li class="menu"><a href="#">rezerwacja</a></li>
+      </ul>  
+    </nav>
+
+<main class="clearfix">
+<section class= "header">
+  <h2>domki holenderske</h2>
+  </section>
+  <div class="caravan clearfix ">
+    <div class="photo"></div>
+    <div class="description">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo aperiam quia repellendus, ipsa quisquam rem consectetur? Illo obcaecati iusto sequi quam accusamus a, necessitatibus, numquam suscipit animi, hic ćexercitationem, eveniet repellendus. Excepturi aperiam quidem ullam deleniti dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, fugiat! Omnis reprehenderit quasi nulla excepturi, laudantium nam quam ipsa fugiat eligendi cupiditate! Officiis dolores necessitatibus, repellat blanditiis laudantium fugiat saepe.</p>
+    </div>
+    <div class="galery">
+      <a href="">zobacz galerię</a>
+    </div>
+  </div>
+  <section class= "header">
+  <h2 class="">domki letniskowe</h2>
+  </section>
+  <div class="lodge clearfix">
+    <div class="photo"></div>
+    <div class="description">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nobis reiciendis velit totam iusto laborum. Quidem ipsam dignissimos perferendis itaque! Explicabo, eveniet iste? Quia voluptatum fugiat aliquam molestiae, omnis blanditiis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo aperiam quia repellendus, ipsa quisquam rem consectetur? Illo obcaecati iusto sequi quam accusamus a, necessitatibus, numquam suscipit animi, hic ćexercitationem, eveniet repellendus. Excepturi aperiam quidem ullam deleniti dolorum?</p>
+    </div>
+ 
+  <div class="galery">
+    <a href="">zobacz galerię</a>
+  </div>
+</div>
+</main>
+
+
+    <footer class ="clearfix">
+
+      <div class= "meet-us">
+        <h3 class="header-in-footer">Tukan - odwiedz nas!!</h3>
+        <p> Zapraszamy do miłego zakątka nad Polskie morze - miejscowość oddalona 10 km od Kołobrzegu Razem z Ustroniem Morskim SIANOŻĘTY stanowią przyjazną spełniającą różne oczekiwania okolice</p>
+      </div>
+      
+      <div class= "here-we-are">
+        <h3 class="header-in-footer">tu jestesmy</h3>
+        <ul>
+          <li>osrodek wypoczynkowy tukan</li>
+          <li>ul. Wschodnia 3</li>
+          <li>78-111 Sianozety POLSKA</li>
+          <li>tel. 888-753-388</li>
+          <li>e-mail: tukan@gmail.com</li>
+        </ul>
+      </div>
+      
+      <div  class = 'location'>
+        <h3 class="header-in-footer">okolica</h3>
+        <ul>
+          <li><a href='https://www.gibonparklinowy.pl/'target="_blank">PARK LINOWY GIBON</a></li>
+          <li><a href='https://www.zpm.portkolobrzeg.pl/378,port-pasazerski'target="_blank">Latarnia i port w Kołobrzegu</a></li>
+          <li><a href='http://westernpark.com.pl/'target="_blank">Western Park</a></li>
+          <li><a href='https://www.hortulus.com.pl/'target="_blank">Labirynt oraz wieża widokowa – ogrody Hortulus</a></li>
+          <li><a href='https://www.ustronie.pl/atrakcje/15/wieza_widokowa_sky_park'target="_blank">Sky-Park wieża widokowa</a></li>
+        </ul>
+      </div>
+      
+      <div class ="message">
+        <h3 class="header-in-footer">napisz do nas</h3>
+      
+        <form>
+          <input type="text" placeholder="imie i nazwisko"><br>
+          <input type="text" placeholder="e-mail"><br>
+          <textarea placeholder="wiadomosc"></textarea><br>
+          <button>wyslij</button>
+        </form>
+      </div>
+      
+      <div class="last-info">
+        <p>&copy; Katarzyna Piatkowska - 888 753 388 -  TUKAN w Sianozetach - </p>
+      </div>
+      
+      </footer>
+      
+        </div>
+        
+      </body>
+      <script>
+
+const slideList = ['/images/slider1.jpg', '/images/slider2.jpg', '/images/slider3.jpg'] 
+const slider = document.querySelector('header')
+let active = 0
+const changeSlide = ()=>{
+  active++
+  if(active === slideList.length){
+    active = 0
+  }
+slider.style.backgroundImage = `url(${slideList[active]})`
+}
+setInterval(changeSlide, 7000)
+
+      </script>
+      </html>
