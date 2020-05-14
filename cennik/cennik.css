@@ -82,6 +82,41 @@ nav li a:hover{
   border-bottom: 4px solid rgb(32, 204, 195) ;
 }
 
+main{
+  height: 150vh;
+  margin: 15% 5%;
+  padding: 10%;
+  background-image: linear-gradient( rgb(32, 204, 195), transparent);
+}
+main h2{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 5px;
+ 
+  
+}
+section{
+  height: 90%;
+  margin: 10% auto;
+}
+
+section h3{
+  font-size: 50px;
+}
+.price{
+  margin: 40px;
+}
+.price p{
+font-size: 24px;
+padding: 3px;
+}
+.price span {
+  width: 260px;
+  display: inline-block;
+}
+
+ 
 footer{
   width: 100vw;
   margin-top: 30%;
