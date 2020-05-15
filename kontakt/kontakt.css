@@ -158,11 +158,11 @@ textarea{
 }
 .contact form button{
   width: 150px;
-  height: 30px;
   margin-left: 4px;
   margin-top: 10px;
   font-size: 20px;
   text-transform:uppercase;
+
 }
 
 
@@ -174,7 +174,7 @@ height: 30vh;
 
 footer{
   max-width: 80vw;
-  margin: 20% auto 0 ;
+  margin: 5% auto 0 ;
   background-image: linear-gradient(rgb(192, 124, 34), transparent);
   height: 50vh;
   display:flex;

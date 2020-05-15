@@ -113,17 +113,23 @@ main{
    }
 section{
   height: 90%;
-  margin: 10% auto;
+  margin: 10% 0;
+  padding:5% 0;
   background-image: linear-gradient(  rgb(192, 124, 34), transparent);
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
   
 }
 
 section h3{
-  padding :5%;
+  padding :10% 0 10% 0;
   font-size: 50px;
+  text-align:left
 }
 .price{
-  padding-left: 10%;
+  width: 50%;
+  margin-left:150px;
 }
 .price p{
   font-size: 24px;
@@ -135,11 +141,12 @@ section h3{
 
 .informations{
   
-  border-top: 2px solid black;
-  margin-top: 8%;
-  padding: 5%;
+  border: 2px solid black;
+  padding: 30px;
+  margin-top: 5%;
+  margin-right: 150px;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 50px;
   letter-spacing: 0.5px;
   text-align: center;
 
