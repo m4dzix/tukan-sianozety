@@ -42,6 +42,30 @@ body{
   background-color: #777;
   cursor: pointer;
 }
+
+.icons-about-us{
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  /* background-color: brown; */
+  top: 97vh;
+  right: 6vw;
+}
+
+.round-icon{
+  margin: 5%;
+  width: 55%;
+  height: 33%;
+  border-radius: 50%;
+  background-image: radial-gradient(rgb(192, 124, 34), whitesmoke);
+  text-align: center;
+  font-size: 30px;
+  border: 4px solid brown;
+}
+.round-icon p{
+  padding-top: 35%;
+}
+
 header{
   position: relative;
   width: 95vw;
@@ -113,8 +137,9 @@ nav li a:hover{
 
 main{
   max-width: 70vw;
-  margin: 0 auto;
+  margin: 0 10%;
   background-color: whitesmoke;
+  /* zmiana margin 0 auto */
 }
 section{
 display: flex;
@@ -137,11 +162,18 @@ section h1{
   letter-spacing: 2px;
 }
 
-.us, .area, .localization{
+.us, .localization{
   
   background-image: linear-gradient(rgb(192, 124, 34), whitesmoke);
-  margin:180px 20px;
+  margin:180px 0;
+  /* zmiana margin 180 20 */
   
+}
+
+.area{
+  background-image: linear-gradient(rgb(192, 124, 34), whitesmoke);
+  margin:180px 0;
+
 }
 
 .text1, .text2, .text3{
@@ -178,7 +210,8 @@ main h2{
 
 main p{
   font-size: 20px;
-  padding: 7%;
+  padding: 7% 0; 
+  /* zmiana padding 7% */
 }
 
 footer{
