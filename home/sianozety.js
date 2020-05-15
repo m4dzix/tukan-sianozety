@@ -10,5 +10,8 @@ initMap = () => {
   })
 }
 const xSign = document.querySelector(".close")
+const accept = document.querySelector(".accept")
 const cookie = document.querySelector(".cookie")
+const rodo = document.querySelector('.rodo')
 xSign.addEventListener('click', ()=>{cookie.classList.add('hover')})
+accept.addEventListener('click', ()=>{rodo.classList.add('hover')})
