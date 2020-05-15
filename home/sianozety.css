@@ -21,6 +21,7 @@ body{
   clear:both;
 }
 .cookie{
+  z-index: 10;
   position:fixed;
   bottom: 2%;
   left:7%;
@@ -47,8 +48,23 @@ body{
   position: absolute;
   width: 300px;
   height: 500px;
-  /* background-color: brown; */
-  top: 97vh;
+  top: 93%;
+  right: 6%;
+}
+.icons-about-area{
+  z-index: 6;
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  top: 157%;
+  left: 10%;
+}
+.icons-about-location{
+  z-index: 6;
+ position: absolute;
+  width: 300px;
+  height: 500px;
+  top: 220%;
   right: 6vw;
 }
 
@@ -64,6 +80,15 @@ body{
 }
 .round-icon p{
   padding-top: 35%;
+  transition: 1,5s;
+}
+.round-icon a{
+  color: black;
+  text-decoration: none;
+}
+.round-icon:hover{
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .7);
+  transform: scale(1.1);
 }
 
 header{
@@ -110,7 +135,7 @@ nav{
   border: 5px solid green;
   box-shadow: 8px 8px 2px 2px rgba(0, 0, 0, .5);
   border-radius: 50%;
-  background-color:rgb(32, 204, 195);
+  background-color:(rgb(192, 124, 34));
 }
 
 li{
@@ -131,15 +156,15 @@ li{
 
 nav li a:hover{
   font-size: 60px;
-  border-bottom: 4px solid rgb(32, 204, 195) ;
+  border-bottom: 4px solid (rgb(192, 124, 34)) ;
 
 }
 
 main{
   max-width: 70vw;
-  margin: 0 10%;
+  margin: 0 auto;
   background-color: whitesmoke;
-  /* zmiana margin 0 auto */
+  
 }
 section{
 display: flex;
@@ -151,13 +176,13 @@ margin-bottom: -80px;
 }
 .toucan1{
   padding-right: 15px;
-  border-bottom: 2px solid rgb(32, 204, 195);
+  border-bottom: 2px solid rgb(192, 124, 34);
 }
 
 section h1{
   text-align: center;
   font-size: 70px;
-  border-bottom: 2px solid rgb(32, 204, 195);
+  border-bottom: 2px solid rgb(192, 124, 34);
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -166,23 +191,37 @@ section h1{
   
   background-image: linear-gradient(rgb(192, 124, 34), whitesmoke);
   margin:180px 0;
-  /* zmiana margin 180 20 */
+  text-align: justify;
   
 }
 
 .area{
   background-image: linear-gradient(rgb(192, 124, 34), whitesmoke);
   margin:180px 0;
+  position: relative;
 
 }
+.area h2{
+  text-align: left;
+}
 
-.text1, .text2, .text3{
+.text1, .text3{
   margin: 20px 30px;
   width: 50%;
   float: left;
 }
 
-.img1, .img2{
+.text2{
+  /* margin: 20px 0px; */
+  width: 50%;
+  float: left;
+  text-align:justify;
+  position: absolute;
+  top:7%;
+  right: 3%;
+}
+
+.img1{
   width: 30%;
   height: 40vh;
   margin: 40px 50px  ;
@@ -194,10 +233,23 @@ section h1{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.img2{
+  width: 30%;
+  height: 40vh;
+  margin: 40px 0px 40px 13%  ;
+  background-color: white;
+  box-shadow:8px 8px 2px 2px rgba(0, 0, 0, .5);
+  float: left;
+  background-image: url("/images/slider1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #map{
 
-  width: 35%;
-  height: 40vh;
+  width: 30%;
+  height: 43vh;
   margin: 20px 30px  ;
   float: left;
 }
@@ -217,7 +269,7 @@ main p{
 footer{
   max-width: 80vw;
   margin: 20% auto 0 ;
-  background-image: linear-gradient( rgb(32, 204, 195), transparent);
+  background-image: linear-gradient(rgb(192, 124, 34), transparent);
   height: 50vh;
   display:flex;
   flex-direction: row;
@@ -279,7 +331,6 @@ form{
 form input{
   height: 30px;
   width:90%;
-  border-radius: 10%;
   border: 2px solid #666 ;
   margin: 4px;
   
@@ -288,18 +339,19 @@ form input{
 form textarea{
   height: 70px;
   width:90%;
-  border-radius: 10%;
   margin: 4px;
   border: 2px solid #666 ;
 }
 
 form button{
-  height: 20px;
-  width: 80 px;
+  
+ 
   color: white;
-  background-color: #666;
-  border: 2px solid #666;
-  border-radius: 16%;
+  background-color: rgb(192, 124, 34);
+  border: 3px solid brown;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 5px;
   transition: .5s;
 }
 form, input, textarea:focus{
@@ -307,7 +359,7 @@ form, input, textarea:focus{
  }
 form button:hover{
   color: black;
-  background-color: #bbb;
+  background-color: rgb(219, 189, 18);
 }
 .last-info{
   position: absolute;
