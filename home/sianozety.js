@@ -9,4 +9,6 @@ initMap = () => {
     center: location,
   })
 }
-// alert(`Obslugujemy pliki cookies `)
+const xSign = document.querySelector(".close")
+const cookie = document.querySelector(".cookie")
+xSign.addEventListener('click', ()=>{cookie.classList.add('hover')})
