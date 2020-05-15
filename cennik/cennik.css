@@ -9,7 +9,8 @@ html{
   font-size: 10px;
 }
 body{
-  background-image: url(/images//background-2436334_1920.jpg);
+  background-color: whitesmoke;
+
 }
 
 .clearfix::after{
@@ -36,6 +37,7 @@ header{
 }
 
 nav{
+  z-index: 2;
   position: fixed;
   width: 100%;
   height: 10vh;
@@ -50,7 +52,7 @@ nav{
   display:flex;
   flex-direction: row;
   justify-content: center;
-  background-image: linear-gradient( rgb(32, 204, 195), transparent);
+  background-image: linear-gradient(  rgb(192, 124, 34), transparent);
   
 }
 
@@ -58,7 +60,7 @@ nav{
   border: 5px solid green;
   box-shadow: 8px 8px 2px 2px rgba(0, 0, 0, .5);
   border-radius: 50%;
-  background-color:rgb(32, 204, 195);
+  background-color:rgb(192, 124, 34);
 }
 
 nav li{
@@ -79,37 +81,52 @@ nav li{
 
 nav li a:hover{
   font-size: 60px;
-  border-bottom: 4px solid rgb(32, 204, 195) ;
+  border-bottom: 4px solid  rgb(192, 124, 34) ;
 }
 
 main{
-  height: 150vh;
-  margin: 15% 5%;
-  padding: 10%;
-  background-image: linear-gradient( rgb(32, 204, 195), transparent);
+  max-width: 70vw;
+  margin: 0% auto ;
+  background-color: whitesmoke;
 }
-main h2{
-    text-align: center;
-    font-size: 70px;
-    font-weight: bold;
-    letter-spacing: 5px;
+
+.title h3{
+  border-bottom: 3px solid rgb(192, 124, 34);
+}
+.title{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
  
+  .toucan1{
+     padding-right: 15px;
+     border-bottom: 3px solid rgb(192, 124, 34);
   
-}
+   }
 section{
   height: 90%;
   margin: 10% auto;
+  background-image: linear-gradient(  rgb(192, 124, 34), transparent);
+  
 }
 
 section h3{
+  padding :5%;
   font-size: 50px;
 }
 .price{
-  margin: 40px;
+  padding-left: 10%;
 }
 .price p{
-font-size: 24px;
-padding: 3px;
+  font-size: 24px;
 }
 .price span {
   width: 260px;
@@ -117,34 +134,41 @@ padding: 3px;
 }
 
 .informations{
+  
   border-top: 2px solid black;
   margin-top: 8%;
   padding: 5%;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.5px;
-}
+  text-align: center;
 
+}
+.charges{
+  list-style: none;
+  
+}
 .zadatek{
+  list-style: none;
   margin: 20px auto;
   font-weight: bold;
+text-align: center;
+
 }
  
 footer{
-  width: 100vw;
-  margin-top: 30%;
-  background-image: linear-gradient( rgb(32, 204, 195), transparent);
+  max-width: 80vw;
+  margin: 20% auto 0 ;
+  background-image: linear-gradient(rgb(192, 124, 34), transparent);
   height: 50vh;
   display:flex;
   flex-direction: row;
   justify-content: center;
-  margin: 10px auto;
   font-size: 20px;
   color:black;
   position:relative;
   overflow: hidden;
 }
-
 .meet-us, .here-we-are, .location, .message{
   width: 20%;
   height: 100%;
@@ -210,11 +234,14 @@ form textarea{
 }
 
 form button{
-  height: 20px;
-  width: 80 px;
+  
+ 
   color: white;
-  background-color: #666;
-  border: 2px solid #666;
+  background-color: rgb(192, 124, 34);
+  border: 3px solid brown;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 5px;
   transition: .5s;
 }
 form, input, textarea:focus{
@@ -222,7 +249,7 @@ form, input, textarea:focus{
  }
 form button:hover{
   color: black;
-  background-color: #bbb;
+  background-color: rgb(219, 189, 18);
 }
 .last-info{
   position: absolute;

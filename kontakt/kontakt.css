@@ -9,10 +9,7 @@ html{
   font-size: 10px;
 }
 body{
-  background-image: url(/images//background-2436334_1920.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+background-color: whitesmoke;
 }
 
 .clearfix::after{
@@ -39,6 +36,7 @@ header{
 }
 
 nav{
+  z-index: 2;
   position: fixed;
   width: 100%;
   height: 10vh;
@@ -53,7 +51,7 @@ nav{
   display:flex;
   flex-direction: row;
   justify-content: center;
-  background-image: linear-gradient( rgb(32, 204, 195), transparent);
+  background-image: linear-gradient( rgb(192, 124, 34), transparent);
   
 }
 
@@ -61,7 +59,7 @@ nav{
   border: 5px solid green;
   box-shadow: 8px 8px 2px 2px rgba(0, 0, 0, .5);
   border-radius: 50%;
-  background-color:rgb(32, 204, 195);
+  background-color:rgb(192, 124, 34);
 }
 
 nav li{
@@ -82,41 +80,58 @@ nav li{
 
 nav li a:hover{
   font-size: 60px;
-  border-bottom: 4px solid rgb(32, 204, 195) ;
+  border-bottom: 4px solid rgb(192, 124, 34) ;
 }
 
 
 main{
-  width: 90vw;
-  height: 120%;
-  margin: 5% auto 0;
-  padding: 5%;
+  max-width: 67vw;
+  margin: 0% auto ;
+  background-color:whitesmoke
+}
 
-  background-image: linear-gradient(rgb(32,204,195), transparent);
-}
 main h3{
-  text-align: center;
-  font-size: 50px;
-   margin-bottom: 5%;
-   border-bottom: 3px solid rgb(32, 204, 195);
+
+  border-bottom: 3px solid rgb(192, 124, 34);
+  
+  
 }
+.title{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+ 
+  .toucan1{
+     padding-right: 15px;
+     border-bottom: 3px solid rgb(192, 124, 34);
+  
+   }
 
 .contact{
-  width: 100%;
+  font-family: barlow;
   height: 90%;
+  margin: 10% auto;
   display:flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 10%;
+  background-image: linear-gradient( rgb(192, 124, 34), transparent);
+  padding: 10%;
 }
 .contact ul{
-
   list-style: inside;
   width: 160%;
   font-weight: bold;
 }
 .contact li{
-  font-size: 20px;
+  font-size: 23px;
   line-height: 200%;
   letter-spacing: .5px;
 
@@ -145,33 +160,31 @@ textarea{
   width: 150px;
   height: 30px;
   margin-left: 4px;
-  margin-top: 17px;
+  margin-top: 10px;
   font-size: 20px;
   text-transform:uppercase;
 }
 
 
 #map{
+margin-top: 250px;
 position: static;
-width: 100%;
 height: 30vh;
 }
 
 footer{
-  width: 100vw;
-  margin-top: 190px;
-  background-image: linear-gradient( rgb(32, 204, 195), transparent);
+  max-width: 80vw;
+  margin: 20% auto 0 ;
+  background-image: linear-gradient(rgb(192, 124, 34), transparent);
   height: 50vh;
   display:flex;
   flex-direction: row;
   justify-content: center;
-  margin: 10px auto;
   font-size: 20px;
   color:black;
   position:relative;
   overflow: hidden;
 }
-
 .meet-us, .here-we-are, .location, .message{
   width: 20%;
   height: 100%;
@@ -237,11 +250,14 @@ form textarea{
 }
 
 form button{
-  height: 20px;
-  width: 80 px;
+  
+ 
   color: white;
-  background-color: #666;
-  border: 2px solid #666;
+  background-color: rgb(192, 124, 34);
+  border: 3px solid brown;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 5px;
   transition: .5s;
 }
 form, input, textarea:focus{
@@ -249,7 +265,7 @@ form, input, textarea:focus{
  }
 form button:hover{
   color: black;
-  background-color: #bbb;
+  background-color: rgb(219, 189, 18);
 }
 .last-info{
   position: absolute;
