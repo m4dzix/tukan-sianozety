@@ -4,7 +4,7 @@
   background-image: linear-gradient(var(--main-color), transparent);
   padding: 40px;
 }
-.rules h3{
+.rules h3 {
   font-size: 40px;
   width: 70%;
   margin: 40px auto;
@@ -13,58 +13,56 @@
   font-size: 25px;
   text-align: justify;
 }
-.rules a{
-  color:black;
+.rules a {
+  color: black;
   text-decoration: none;
 }
-.rules a:hover{
-  color:grey;
+.rules a:hover {
+  color: grey;
 }
 .show {
   display: flex;
 }
 
 .hover {
-  display: none
+  display: none;
 }
 
-@media(max-width:812px)and (orientation:landscape) {
-  .header{
+@media (max-width: 812px) and (orientation: landscape) {
+  .header {
     margin: 30px auto;
   }
-.rules{
-  margin-top: 100px;
+  .rules {
+    margin-top: 100px;
+  }
 }
-}
-@media(max-width:736px)and (orientation:landscape) {
-  .header{
+@media (max-width: 736px) and (orientation: landscape) {
+  .header {
     margin: 30px auto;
   }
-.rules{
-  margin-top: 100px;
-}
-.rules h3{
-  font-size: 30px;
-  width: 100%;
-
-}
-.rules p {
-  font-size: 20px;
-  text-align: center;
-}
-}
-@media(max-width:812px)and (orientation:portrait){
-  .rules h3{
+  .rules {
+    margin-top: 100px;
+  }
+  .rules h3 {
     font-size: 30px;
     width: 100%;
- 
   }
   .rules p {
     font-size: 20px;
     text-align: center;
   }
- .header h1{
-   font-size: 40px;
-   margin: 0 -15px;
- }
+}
+@media (max-width: 812px) and (orientation: portrait) {
+  .rules h3 {
+    font-size: 30px;
+    width: 100%;
+  }
+  .rules p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 40px;
+    margin: 0 -15px;
+  }
 }

@@ -27,7 +27,7 @@ main section h2:first-child {
 .photo {
   width: 30%;
   height: 290px;
-  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, .5);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .photo img {
@@ -48,20 +48,19 @@ main section h2:first-child {
 
 .description p {
   font-size: 20px;
-  margin:10px;
+  margin: 10px;
 }
-.description ul{
+.description ul {
   font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin:5px
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 5px;
 }
-.description li{
+.description li {
   padding: 5px;
 }
 .galery a {
-
   width: 150px;
   border: 3px solid black;
   color: #fff;
@@ -72,18 +71,15 @@ main section h2:first-child {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .galery a:hover {
-
   background-color: hsl(0, 59%, 55%);
   letter-spacing: 1px;
-
 }
 
-@media(max-width:736px)and (orientation:landscape) {
-
+@media (max-width: 736px) and (orientation: landscape) {
   .mainSection {
     margin-top: 100px;
   }
@@ -102,24 +98,18 @@ main section h2:first-child {
     width: 100%;
   }
 }
-@media(max-width:800px)and (orientation:portrait) {
-
+@media (max-width: 800px) and (orientation: portrait) {
   .mainSection {
     margin-top: 100px;
   }
 
-
-
   .photo {
     width: 50%;
     height: 200px;
-    margin:20px;
+    margin: 20px;
   }
-
-
 }
-@media(max-width:700px)and (orientation:portrait) {
-
+@media (max-width: 700px) and (orientation: portrait) {
   .mainSection {
     margin-top: 100px;
   }
