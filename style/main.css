@@ -1,0 +1,731 @@
+html {
+  box-sizing: border-box;
+  --main-color: rgb(192, 124, 34);
+  font-family: 'Lato', sans-serif;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+
+body {
+  background-color: whitesmoke
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,button {
+  font-family: 'Amatic SC', cursive, sans-serif;
+}
+
+
+header {
+  position: relative;
+  width: 95vw;
+  height: 70vh;
+  background-image: url("/images/slider1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  box-shadow: 8px 8px 2px 2px rgba(0, 0, 0, .5);
+  transition: 2s;
+}
+
+header div {
+  position: relative;
+  width: 100%;
+  line-height: 70vh;
+  text-align: center;
+  font-size: 70px;
+
+}
+
+nav {
+  font-family: 'Amatic SC', cursive, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  flex-basis: 2;
+  top: 0;
+  left: 0;
+  margin: 0 auto 10px auto;
+  list-style: none;
+  text-align: center;
+  line-height: 10vh;
+  background-image: linear-gradient(var(--main-color), transparent);
+}
+
+.logo {
+  height: 120px;
+  border: 5px solid green;
+  box-shadow: 8px 8px 2px 2px rgba(0, 0, 0, .5);
+  border-radius: 50%;
+  background-color: var(--main-color);
+  margin: 20px 0 0 20px;
+}
+
+.menuList {
+  display: flex;
+  position: relative;
+}
+
+li {
+  display: inline-block;
+}
+
+.menu a {
+  position: relative;
+  display: block;
+  color: white;
+  text-shadow: 2px 5px black;
+  text-decoration: none;
+  font-size: 45px;
+  text-align: center;
+  margin: 20px 20px 0 0;
+  transition: 1s;
+}
+
+nav li a:hover {
+  font-size: 60px;
+  border-bottom: 4px solid var(--main-color);
+}
+
+.burger {
+  display: none;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  background-color: whitesmoke;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1500px;
+  padding: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.toucan1 {
+  padding-right: 15px;
+  border-bottom: 2px solid var(--main-color);
+}
+
+section h1 {
+  text-align: center;
+  font-size: 70px;
+  border-bottom: 2px solid var(--main-color);
+  font-weight: bold;
+  letter-spacing: 2px;
+
+}
+
+footer {
+
+  padding-bottom: 5%;
+  margin: 10% auto 0;
+  background-image: linear-gradient(var(--main-color), transparent);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  color: black;
+  overflow: hidden;
+  flex-grow: 1;
+  width: 100%;
+
+}
+
+.meet-us,
+.here-we-are,
+.location,
+.message {
+  width: 24%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.message {
+  text-align: left;
+}
+
+.footer__header {
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 25px;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, .5);
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.meet-us p {
+  line-height: 140%;
+  letter-spacing: 3px;
+  padding: 0 10%;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 5px auto;
+}
+
+.location a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.location a:hover {
+  color: #555;
+  border-bottom: 1px solid;
+  transition: .5s;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.form__input {
+  border: 2px solid #000;
+  margin: 4px;
+  font-size: 13px;
+  width: 100%;
+  padding: 5px;
+}
+
+.form__label {
+  margin: 4px;
+}
+
+.form__textarea {
+  margin: 4px;
+  border: 2px solid #000;
+  font-size: 13px;
+  width: 100%;
+  padding: 5px;
+}
+
+.form__button {
+  color: white;
+  margin: 4px;
+  background-color: brown;
+  border: 2px solid black;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  padding: 2px 20px;
+  transition: .5s;
+  font-family: 'Amatic SC', cursive, sans-serif;
+}
+
+
+.form__button:hover {
+  background-color: hsl(0, 59%, 55%);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+form,
+.form__input,
+.form__textarea:focus {
+  outline: none;
+}
+
+.last-info {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.last-info p {
+  font-size: 15px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.hover {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+@media(max-width:1300px)and (orientation:portrait) {
+
+  .menu a {
+    font-size: 42px;
+  }
+}
+
+@media(max-width:1024px)and (orientation:landscape) {
+
+  .menu a {
+    font-size: 42px;
+  }
+}
+
+@media(max-width:812px)and (orientation:portrait) {
+
+  .menu a {
+    font-size: 42px;
+  }
+
+  nav {
+    display: none;
+    background-color: burlywood;
+
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menuList {
+    flex-direction: column;
+
+  }
+
+  .menu a {
+    display: block;
+    font-size: 50px;
+    width: 100%;
+    margin: 10px;
+  }
+
+  .burger {
+    display: block;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 35px;
+    top: 3%;
+  }
+
+  .burger p {
+    color: black;
+    font-size: 20px;
+    line-height: 35px;
+    margin-left: 35px;
+  }
+
+  .burger .fas {
+    z-index: 4;
+    display: block;
+    position: absolute;
+    top: 3%;
+    right: 6%;
+    font-size: 35px;
+    transition: .5;
+  }
+
+  section h1 {
+    font-size: 50px;
+  }
+
+  .header {
+    margin: 30px auto;
+  }
+
+  .us {
+    margin-top: 100px;
+  }
+
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+
+  }
+
+  .header-in-footer {
+    width: 100%;
+  }
+
+  .meet-us,
+  .here-we-are,
+  .location,
+  .message {
+    width: 50%;
+    height: 25%;
+    padding: 0px auto;
+  }
+
+  .meet-us p {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+  footer ul li {
+    font-size: 15px;
+  }
+
+  .location a {
+    font-size: 15px;
+  }
+
+  .last-info {
+    position: relative;
+    margin-top: 5%;
+font-size: 12px;
+  }
+}
+
+@media(max-width:1300px)and (orientation:portrait) {
+
+  .menu a {
+    font-size: 42px;
+  }
+}
+
+@media(max-width:1024px)and (orientation:landscape) {
+
+  .menu a {
+    font-size: 42px;
+  }
+}
+
+@media(max-width:1000px)and (orientation:landscape) {
+
+  .menu a {
+    font-size: 42px;
+  }
+
+  nav {
+    display: none;
+    background-color: burlywood;
+
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menuList {
+    flex-direction: column;
+
+  }
+
+  .menu a {
+    display: block;
+    font-size: 50px;
+    width: 100%;
+    margin: 10px;
+  }
+
+  .burger {
+    display: block;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 35px;
+    top: 3%;
+  }
+
+  .burger p {
+    color: black;
+    font-size: 20px;
+    line-height: 35px;
+    margin-left: 35px;
+  }
+
+  .burger .fas {
+    z-index: 4;
+    display: block;
+    position: absolute;
+    top: 3%;
+    right: 6%;
+    font-size: 35px;
+    transition: .5;
+  }
+
+  section h1 {
+    font-size: 50px;
+  }
+
+  .header {
+    margin: 30px auto;
+  }
+
+  .us {
+    margin-top: 100px;
+  }
+
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+
+  }
+
+  .header-in-footer {
+    width: 100%;
+  }
+
+  .meet-us,
+  .here-we-are,
+  .location,
+  .message {
+    width: 50%;
+    height: 25%;
+    padding: 0px auto;
+  }
+
+  .meet-us p {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  footer ul li {
+    font-size: 20px;
+  }
+
+  .location a {
+    font-size: 20px;
+  }
+
+  p.form__paragraph {
+    margin: 5px;
+  }
+
+  .last-info {
+    position: relative;
+    margin-top: 5%;
+
+  }
+}
+
+@media(max-width:768px)and (orientation:portrait) {
+  nav {
+    display: none;
+    padding: 3%;
+    flex-grow: 1;
+    background-color: burlywood;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menuList {
+    flex-direction: column;
+
+  }
+
+  .menu a {
+    display: block;
+    font-size: 50px;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .burger {
+    display: block;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 35px;
+    top: 3%;
+  }
+
+  .burger p {
+    color: black;
+    font-size: 20px;
+    line-height: 35px;
+    margin-left: 35px;
+  }
+
+  .burger .fas {
+    z-index: 4;
+    display: block;
+    position: absolute;
+    top: 3%;
+    right: 6%;
+    font-size: 35px;
+    transition: .5;
+  }
+
+  .fa-bars:before {
+    content: "\f0c9";
+  }
+
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+
+  .header-in-footer {
+    width: 100%;
+  }
+
+  .meet-us,
+  .here-we-are,
+  .location,
+  .message {
+    width: 50%;
+    height: 25%;
+    padding: 0px auto;
+  }
+
+  .meet-us p {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  footer ul li {
+    font-size: 20px;
+  }
+
+  .location a {
+    font-size: 20px;
+  }
+
+  .last-info {
+    position: relative;
+    margin-top: 5%;
+
+  }
+}
+
+@media(max-width:414px) and (orientation:portrait) {
+
+  .main-info {
+    width: 85vw;
+    height: 80vh;
+    padding: 6%;
+    border: 5px solid gray;
+    overflow: scroll;
+  }
+
+  .main-info h2 {
+    font-size: 4.5rem;
+    padding-bottom: 4%;
+  }
+
+  .main-info p {
+    font-size: 1.9rem;
+    padding-bottom: 4%;
+    letter-spacing: 0px;
+  }
+
+  .main-info ul {
+    margin: 3%;
+  }
+
+  .main-info li {
+    font-size: 1.7em;
+    padding: 1%;
+
+  }
+
+  .main-info i {
+    font-size: 3em;
+  }
+
+  header {
+    margin-top: 0;
+  }
+
+
+  article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-in-footer {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .meet-us,
+  .here-we-are,
+  .location,
+  .message {
+    width: 100%;
+    flex-basis: 1;
+    padding: 10% auto;
+
+  }
+
+  .meet-us p {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  footer ul li {
+    font-size: 20px;
+  }
+
+  .location a {
+    font-size: 20px;
+  }
+
+  .last-info {
+    position: relative;
+    padding-top: 5%;
+  }
+
+}
+
+@media(max-width:568px)and (orientation:landscape) {
+  .menu a {
+    font-size: 35px;
+  }
+
+  .menuList {
+    margin: 0;
+  }
+}
