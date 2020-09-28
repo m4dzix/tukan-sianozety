@@ -9,7 +9,7 @@ main h2 {
   margin: 30px auto;
   padding: 5%;
   text-align: center;
-  background-image: linear-gradient(rgb(192, 124, 34), transparent);
+  background-image: linear-gradient(var(--main-color), transparent);
 }
 
 .picture img {
