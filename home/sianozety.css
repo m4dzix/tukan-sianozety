@@ -144,7 +144,7 @@ header {
 }
 
 .container {
-  margin: 20px 30px;
+  margin: 10px;
   background-image: linear-gradient(var(--main-color), whitesmoke);
   width: 90%;
   float: left;
