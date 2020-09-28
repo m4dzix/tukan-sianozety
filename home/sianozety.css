@@ -143,7 +143,7 @@ header {
   height: 85vh;
 }
 
-.header__paragraph {
+/* .header__paragraph {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,7 +156,7 @@ header {
   margin: 0;
   letter-spacing: 5px;
   font-family: "Amatic SC", cursive, sans-serif;
-}
+} */
 
 .container {
   margin: 10px;
