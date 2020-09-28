@@ -143,6 +143,21 @@ header {
   height: 85vh;
 }
 
+.header__paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 70px;
+  color: white;
+  text-shadow: black 3px 3px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  letter-spacing: 5px;
+  font-family: "Amatic SC", cursive, sans-serif;
+}
+
 .container {
   margin: 10px;
   background-image: linear-gradient(var(--main-color), whitesmoke);
