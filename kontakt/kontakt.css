@@ -23,7 +23,7 @@
 }
 
 .article__listItem {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 150%;
   padding: 10px 0;
   width: 100%;
@@ -38,14 +38,14 @@
   width: 100%;
 }
 .article__label {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .article__input {
-  margin: 10px;
+  margin: 7px;
   width: 100%;
   padding: 7px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .article__textarea {
@@ -54,7 +54,6 @@
   margin: 7px;
   padding-top: 7px;
   font-size: 15px;
-  text-transform: uppercase;
 }
 
 .article__button {
@@ -80,8 +79,11 @@
 #map {
   position: static;
   height: 40vh;
-
-  margin-top: 100px;
+  color: grey;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {

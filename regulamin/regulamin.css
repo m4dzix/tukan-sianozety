@@ -42,6 +42,7 @@
   }
   .rules {
     margin-top: 100px;
+    padding: 10px;
   }
   .rules h3 {
     font-size: 30px;
@@ -53,6 +54,9 @@
   }
 }
 @media (max-width: 812px) and (orientation: portrait) {
+  .rules {
+    padding: 10px;
+  }
   .rules h3 {
     font-size: 30px;
     width: 100%;
