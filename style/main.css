@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  --main-color: rgb(247, 247, 154);
+  --main-color: rgb(192, 124, 34);
   font-family: "Lato", sans-serif;
 }
 
@@ -46,26 +46,28 @@ nav {
   font-family: "Amatic SC", cursive, sans-serif;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   z-index: 3;
   position: fixed;
   width: 100%;
   flex-basis: 2;
   top: 0;
   left: 0;
-  margin: 0 auto 10px auto;
+  padding: 0 30px;
   list-style: none;
-  text-align: center;
   line-height: 10vh;
   background-image: linear-gradient(var(--main-color), transparent);
 }
 
 .logo {
+  position: fixed;
   height: 120px;
   border: 5px solid green;
   box-shadow: 8px 8px 2px 2px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   background-color: var(--main-color);
+  left: 10px;
+  z-index: 4;
   margin: 10px;
 }
 
@@ -76,7 +78,6 @@ nav {
 }
 
 .menu a {
-  position: relative;
   display: block;
   color: white;
   text-shadow: 2px 5px black;
@@ -89,15 +90,10 @@ nav {
 
 nav li a:hover {
   font-size: 45px;
-  border-bottom: 4px solid var(--main-color);
 }
 
 .burger {
   display: none;
-}
-
-.header {
-  margin-bottom: 50px;
 }
 
 .header h1 {
@@ -106,7 +102,6 @@ nav li a:hover {
 
 main {
   margin: 0 auto;
-  background-color: tra;
   flex-grow: 1;
   width: 100%;
   max-width: 1200px;
@@ -139,7 +134,6 @@ section h1 {
 
 footer {
   padding-bottom: 5%;
-  margin: 10% auto 0;
   background-image: linear-gradient(var(--main-color), transparent);
   display: flex;
   flex-direction: row;
@@ -260,6 +254,7 @@ form,
   bottom: 20px;
   width: 100%;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.603);
 }
 
 .last-info p {
@@ -283,6 +278,10 @@ form,
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
+  nav {
+    justify-content: flex-start;
+  }
+
   .menu a {
     font-size: 35px;
   }
@@ -296,6 +295,7 @@ form,
   nav {
     display: none;
     background-color: burlywood;
+    justify-content: flex-start;
   }
 
   .logo {
@@ -310,7 +310,7 @@ form,
     display: block;
     font-size: 40px;
     width: 100%;
-    margin: 10px;
+    margin: 5px;
   }
 
   .burger {
@@ -392,7 +392,7 @@ form,
 
 @media (max-width: 1300px) and (orientation: portrait) {
   .menu a {
-    font-size: 42px;
+    font-size: 35px;
   }
 }
 
@@ -404,7 +404,7 @@ form,
 
 @media (max-width: 1000px) and (orientation: landscape) {
   .menu a {
-    font-size: 42px;
+    font-size: 35px;
   }
 
   nav {
@@ -422,9 +422,9 @@ form,
 
   .menu a {
     display: block;
-    font-size: 50px;
+    font-size: 35px;
     width: 100%;
-    margin: 10px;
+    margin: 5px;
   }
 
   .burger {
@@ -529,7 +529,7 @@ form,
 
   .menu a {
     display: block;
-    font-size: 50px;
+    font-size: 35px;
     width: 100%;
     margin: 0px;
   }
