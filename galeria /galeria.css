@@ -11,12 +11,14 @@ main h2 {
 
 .picture {
   padding: 5%;
-  text-align: center;
+  text-align: left;
 }
 
 .picture img {
-  text-align: center;
+  border: 1px solid grey;
+  margin: 0 3px;
   transition: 0.5s;
+  text-align: center;
 }
 
 .picture img:hover {
