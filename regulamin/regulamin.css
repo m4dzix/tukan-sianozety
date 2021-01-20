@@ -9,9 +9,14 @@
   width: 70%;
   margin: 40px auto;
 }
-.rules p {
+.rules__list {
+  padding: 10px;
+}
+.rules__item {
   font-size: 18px;
   text-align: justify;
+  margin: 10px;
+  list-style-type: decimal;
 }
 .rules a {
   color: black;
