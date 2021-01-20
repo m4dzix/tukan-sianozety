@@ -193,7 +193,7 @@ article ul {
   flex-direction: column;
   align-items: space-around;
   width: 100%;
-  background-image: linear-gradient(var(--main-color), transparent);
+  background-image: linear-gradient(var(--main-color), whitesmoke);
 }
 
 .div__movie {
