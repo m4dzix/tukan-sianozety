@@ -47,7 +47,6 @@ main p {
 }
 
 .charges {
-  list-style: circle;
   padding: 5%;
 }
 
@@ -81,6 +80,14 @@ main p {
   .burger {
     display: block;
   }
+  .charges li {
+    list-style: none;
+  }
+}
+@media (max-width: 1000px) and (orientation: portrait) {
+  .charges li {
+    list-style: none;
+  }
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
@@ -90,6 +97,7 @@ main p {
 
   .price p {
     width: 100%;
+    text-align: left;
   }
 
   .main {
@@ -110,6 +118,7 @@ main p {
 
   .price p {
     width: 100%;
+    text-align: left;
   }
 
   .main {
