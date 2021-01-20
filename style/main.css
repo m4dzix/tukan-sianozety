@@ -72,8 +72,12 @@ nav {
   left: 10px;
   z-index: 4;
   margin: 10px;
+  transition: 1s;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+}
 .menuList {
   display: flex;
   align-items: flex-start;
