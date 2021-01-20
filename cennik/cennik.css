@@ -58,6 +58,7 @@ main p {
 
 .deposit {
   list-style: none;
+  padding: 5%;
 }
 
 .deposit li {
@@ -118,6 +119,7 @@ main p {
 
   .price p {
     width: 100%;
+    padding: 10px;
     text-align: left;
   }
 
