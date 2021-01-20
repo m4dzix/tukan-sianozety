@@ -144,6 +144,7 @@ header {
 }
 .container {
   margin: 10px;
+  padding: 15px;
   background-image: linear-gradient(var(--main-color), whitesmoke);
   width: 90%;
   float: left;
@@ -153,15 +154,13 @@ header {
 }
 
 .container h2 {
-  margin: 5%;
+  margin: 10px auto;
   text-align: center;
   width: 100%;
   font-size: 50px;
 }
 
-.text1,
-.text2,
-.text3 {
+.text {
   display: flex;
 }
 
@@ -178,24 +177,12 @@ article ul {
   flex-basis: 50%;
 }
 
-.img1 {
+.images {
+  width: 35vh;
   height: 40vh;
-  width: 50%;
-  margin: 0px 50px;
+  margin: 0px auto;
   background-color: white;
-  box-shadow: 8px 8px 2px 2px rgba(0, 0, 0, 0.5);
-  background-image: url("/images/home.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.img2 {
-  height: 40vh;
-  width: 100%;
-  margin: 0px 50px;
-  background-color: white;
-  box-shadow: 8px 8px 2px 2px rgba(0, 0, 0, 0.5);
-  background-image: url("/images/home2.png");
+  box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.5);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -220,9 +207,9 @@ article ul {
 }
 
 #map {
-  width: 40%;
+  width: 35vh;
   height: 40vh;
-  margin: 0px 50px;
+  margin: 0 auto;
   color: grey;
   border: 1px solid grey;
   display: flex;
@@ -276,19 +263,31 @@ aside {
   aside {
     display: none;
   }
+  .text {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
-  aside {
-    display: none;
-  }
-
   .main-info {
     height: 90%;
     width: 85vw;
     padding: 6%;
     overflow: scroll;
     margin-bottom: 20px;
+  }
+  .images {
+    height: 30vh;
+    margin-bottom: 20px;
+  }
+  #map {
+    height: 30vh;
+    margin-bottom: 20px;
+  }
+  .text {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -329,7 +328,6 @@ aside {
 
 .div__movie {
   width: 100%;
-  /* overflow: hidden; */
 }
 
 @media (max-width: 375px) and (orientation: portrait) {
@@ -402,15 +400,6 @@ aside {
   article p {
     width: 100%;
     padding: 10px;
-  }
-
-  .img1 {
-    width: 80%;
-  }
-
-  .div__movie {
-    width: 100%;
-    overflow: hidden;
   }
 
   #map {
