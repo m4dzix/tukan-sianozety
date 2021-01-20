@@ -57,11 +57,11 @@ main p {
   padding: 2%;
 }
 
-.zadatek {
+.deposit {
   list-style: none;
 }
 
-.zadatek li {
+.deposit li {
   text-transform: uppercase;
   font-size: 20px;
   padding: 2%;
@@ -122,7 +122,7 @@ main p {
     width: 100%;
   }
 
-  .zadatek {
+  .deposit {
     margin: 0px;
     padding: 0px;
   }
