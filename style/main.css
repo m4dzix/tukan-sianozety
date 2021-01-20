@@ -88,7 +88,7 @@ nav {
   transition: 1s;
 }
 
-nav li a:hover {
+.menu a:hover {
   font-size: 45px;
 }
 
@@ -124,7 +124,7 @@ section {
   border-bottom: 2px solid var(--main-color);
 }
 
-section h1 {
+.title {
   text-align: center;
   font-size: 60px;
   border-bottom: 2px solid var(--main-color);
@@ -174,14 +174,15 @@ footer {
   padding: 0 10%;
 }
 
-footer ul {
+.footer__list {
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 10px;
 }
 
-footer ul li {
+.footer__item {
   margin: 5px auto;
 }
 
@@ -380,7 +381,7 @@ form,
     letter-spacing: 2px;
   }
 
-  footer ul li {
+  .footer__item {
     font-size: 15px;
   }
 
@@ -494,7 +495,7 @@ form,
     letter-spacing: 2px;
   }
 
-  footer ul li {
+  .footer__item {
     font-size: 20px;
   }
 
@@ -593,7 +594,7 @@ form,
     letter-spacing: 2px;
   }
 
-  footer ul li {
+  .footer__item {
     font-size: 20px;
   }
 
@@ -675,7 +676,7 @@ form,
     letter-spacing: 1px;
   }
 
-  footer ul li {
+  .footer__item {
     font-size: 20px;
   }
 
