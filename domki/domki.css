@@ -109,7 +109,9 @@ main section h2:first-child {
   .mainSection {
     margin-top: 100px;
   }
-
+  main h2 {
+    text-align: center;
+  }
   .caravan,
   .lodge {
     flex-direction: column;

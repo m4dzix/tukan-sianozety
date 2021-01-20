@@ -26,6 +26,12 @@ main h2 {
   transform: scale(1.1);
 }
 
+@media (max-width: 700px) and (orientation: portrait) {
+  main h2 {
+    text-align: center;
+  }
+}
+
 @media (max-width: 375px) and (orientation: portrait) {
   .picture {
     flex-direction: column;
