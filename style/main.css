@@ -13,6 +13,9 @@ html {
 body {
   background-image: url(../images/beach-1852945_1920.jpg);
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
 }
 
