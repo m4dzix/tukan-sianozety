@@ -3,7 +3,7 @@ window.onscroll = function () {
   const top = window.pageYOffset || document.documentElement.scrollTop;
   const isMobile = window.innerWidth > 812;
   if (top > 100 && isMobile) {
-    nav.style.background = "#000000ce";
+    nav.style.background = "var(--main-color)";
     nav.style.lineHeight = "10px";
     nav.style.padding = "10px";
   } else {
