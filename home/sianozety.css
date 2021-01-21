@@ -64,6 +64,7 @@
 
 .section {
   display: grid;
+  justify-content: stretch;
   z-index: 5;
   position: fixed;
   bottom: 10px;
