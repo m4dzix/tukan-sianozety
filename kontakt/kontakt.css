@@ -58,6 +58,10 @@
   .article__paragraph {
     margin: 5px;
   }
+  #map {
+    height: 45vh;
+    width: 60vw;
+  }
 }
 @media (max-width: 812px) and (orientation: landscape) {
   .section__article {
@@ -72,6 +76,9 @@
   }
   .article__paragraph {
     margin: 5px;
+  }
+  #map {
+    height: 60vh;
   }
 }
 @media (max-width: 414px) and (orientation: portrait) {
