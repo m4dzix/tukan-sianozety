@@ -151,6 +151,7 @@ header {
   flex: 4;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .container h2 {
@@ -178,8 +179,8 @@ article ul {
 }
 
 .images {
-  width: 35vh;
-  height: 40vh;
+  width: 35vw;
+  height: 25vh;
   margin: 0px auto;
   background-color: white;
   box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.5);
@@ -278,7 +279,6 @@ aside {
     margin-bottom: 20px;
   }
   .images {
-    height: 30vh;
     margin-bottom: 20px;
   }
   #map {
@@ -325,7 +325,11 @@ aside {
     font-size: 3em;
   }
 }
-
+.images {
+  height: 35vh;
+  width: 40%;
+  margin-bottom: 20px;
+}
 .div__movie {
   width: 100%;
 }
@@ -401,9 +405,10 @@ aside {
     width: 100%;
     padding: 10px;
   }
-
-  #map {
+  .images {
+    height: 35vh;
     width: 80%;
+    margin-bottom: 20px;
   }
 }
 
