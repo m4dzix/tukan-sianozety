@@ -195,12 +195,12 @@ footer {
   font-size: 18px;
   text-decoration: none;
   color: black;
+  transition: 0.5s;
 }
 
 .location a:hover {
   color: #555;
   border-bottom: 1px solid;
-  transition: 0.5s;
 }
 
 form {
