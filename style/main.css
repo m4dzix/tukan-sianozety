@@ -289,10 +289,6 @@ form,
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
-  nav {
-    justify-content: flex-start;
-  }
-
   .menu a {
     font-size: 35px;
   }
@@ -401,24 +397,9 @@ form,
   }
 }
 
-@media (max-width: 1300px) and (orientation: portrait) {
-  .menu a {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 1024px) and (orientation: landscape) {
-  .menu a {
-    font-size: 42px;
-  }
-}
-
 @media (max-width: 1000px) and (orientation: landscape) {
-  .menu a {
-    font-size: 35px;
-  }
-
   nav {
+    justify-content: flex-start;
     display: none;
     background-color: burlywood;
   }
@@ -433,7 +414,6 @@ form,
 
   .menu a {
     display: block;
-    font-size: 35px;
     width: 100%;
     margin: 5px;
   }
