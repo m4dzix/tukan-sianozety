@@ -15,22 +15,28 @@ const nav = document.querySelector("nav");
 const body = document.querySelector("body");
 
 const clicked = localStorage.getItem("clicked");
+console.log(clicked);
 
-if (clicked === "false") {
+if (clicked === "true") {
+  console.log(clicked, "tak");
+  document.querySelector(".popup").classList.add("close");
+} else {
   document.querySelector(".popup").classList.remove("close");
+  console.log(clicked), "nie";
 }
 
 document.querySelector(".fas").addEventListener("click", () => {
   document.querySelector(".popup").classList.add("close");
   cookie.classList.remove("hover");
   rodo.classList.remove("hover");
-  localStorage.setItem("clicked", true);
+  localStorage.setItem("clicked", "true");
 });
 
 setTimeout(() => {
-  localStorage.setItem("clicked", false);
-}, 1000 * 60 * 5);
+  localStorage.setItem("clicked", "false");
+}, 1000 * 60 * 10);
 
+console.log(clicked);
 xSign.addEventListener("click", () => {
   cookie.classList.add("close");
 });
