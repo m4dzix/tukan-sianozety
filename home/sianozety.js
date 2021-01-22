@@ -1,6 +1,9 @@
 const xSign = document.querySelector(".js-close");
 const accept = document.querySelector(".js-accept");
 const cookie = document.querySelector(".cookie");
+const burger = document.querySelector(".burger .fas");
+const nav = document.querySelector("nav");
+const body = document.querySelector("body");
 const rodo = document.querySelector(".rodo");
 
 xSign.addEventListener("click", () => {
@@ -10,19 +13,12 @@ accept.addEventListener("click", () => {
   rodo.classList.add("hover");
 });
 
-const burger = document.querySelector(".burger .fas");
-const nav = document.querySelector("nav");
-const body = document.querySelector("body");
-
 const clicked = localStorage.getItem("clicked");
-console.log(clicked);
 
 if (clicked === "true") {
-  console.log(clicked, "tak");
   document.querySelector(".popup").classList.add("close");
 } else {
   document.querySelector(".popup").classList.remove("close");
-  console.log(clicked), "nie";
 }
 
 document.querySelector(".fas").addEventListener("click", () => {
