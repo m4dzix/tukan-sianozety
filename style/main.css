@@ -155,15 +155,10 @@ footer {
 
 .meet-us,
 .here-we-are,
-.location,
-.message {
+.location {
   width: 24%;
   text-align: center;
   font-size: 18px;
-}
-
-.message {
-  text-align: left;
 }
 
 .footer__header {
@@ -201,58 +196,6 @@ footer {
 .location a:hover {
   color: #555;
   border-bottom: 1px solid;
-}
-
-form {
-  width: 50%;
-  margin: 0 auto;
-  font-size: 15px;
-}
-
-.form__input {
-  border: 2px solid #000;
-  margin: 4px;
-  font-size: 13px;
-  width: 100%;
-  padding: 5px;
-}
-
-.form__label {
-  margin: 4px;
-}
-
-.form__textarea {
-  margin: 4px;
-  border: 2px solid #000;
-  font-size: 13px;
-  width: 100%;
-  padding: 5px;
-}
-
-.form__button {
-  color: white;
-  margin: 4px;
-  background-color: brown;
-  border: 2px solid black;
-  font-size: 20px;
-  width: 100%;
-  height: 100%;
-  text-transform: uppercase;
-  padding: 2px 20px;
-  transition: 0.5s;
-  font-family: "Amatic SC", cursive, sans-serif;
-}
-
-.form__button:hover {
-  background-color: hsl(0, 59%, 55%);
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-form,
-.form__input,
-.form__textarea:focus {
-  outline: none;
 }
 
 .last-info {
@@ -370,8 +313,7 @@ form,
 
   .meet-us,
   .here-we-are,
-  .location,
-  .message {
+  .location {
     width: 50%;
     height: 25%;
     padding: 0px auto;
@@ -468,8 +410,7 @@ form,
 
   .meet-us,
   .here-we-are,
-  .location,
-  .message {
+  .location {
     width: 50%;
     height: 25%;
     padding: 0px auto;
@@ -567,8 +508,7 @@ form,
 
   .meet-us,
   .here-we-are,
-  .location,
-  .message {
+  .location {
     width: 50%;
     height: 25%;
     padding: 0px auto;
@@ -649,8 +589,7 @@ form,
 
   .meet-us,
   .here-we-are,
-  .location,
-  .message {
+  .location {
     width: 100%;
     flex-basis: 1;
     padding: 10% auto;
