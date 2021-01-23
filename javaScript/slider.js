@@ -1,7 +1,7 @@
 const slideList = [
-  "/images/slider1.jpg",
-  "/images/slider2.jpg",
-  "/images/slider3.jpg",
+  "../images/slider1.jpg",
+  "../images/slider2.jpg",
+  "../images/slider3.jpg",
 ];
 const homeSlideList = [
   "images/slider1.jpg",
