@@ -16,7 +16,8 @@ const changeSlide = () => {
   if (active === homeSlideList.length) {
     active = 0;
   }
-  slider.style.backgroundImage = `url(${slideList[active]})`;
-  homeSlider.style.backgroundImage = `url(${homeSlideList[active]})`;
+  homeSlider
+    ? (homeSlider.style.backgroundImage = `url(${homeSlideList[active]})`)
+    : (slider.style.backgroundImage = `url(${slideList[active]})`);
 };
 setInterval(changeSlide, 7000);
