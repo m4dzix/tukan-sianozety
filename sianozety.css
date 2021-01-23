@@ -217,7 +217,7 @@ article ul {
   align-items: center;
 }
 
-aside {
+figure {
   flex: 1;
 }
 
@@ -255,13 +255,13 @@ aside {
 }
 
 @media (max-width: 1300px) and (orientation: portrait) {
-  aside {
+  figure {
     display: none;
   }
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
-  aside {
+  figure {
     display: none;
   }
   .text {
@@ -292,7 +292,7 @@ aside {
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
-  aside {
+  figure {
     display: none;
   }
 
