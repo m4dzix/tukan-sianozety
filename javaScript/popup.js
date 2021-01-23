@@ -27,9 +27,10 @@ document.querySelector(".fas").addEventListener("click", () => {
   rodo.classList.remove("hide");
   localStorage.setItem("clicked", "true");
 });
+
 setTimeout(() => {
-  localStorage.setItem("clicked", "false");
-}, 1000 * 60 * 10);
+  localStorage.clear();
+}, 1000 * 60 * 60 * 24);
 
 console.log(clicked);
 xSign.addEventListener("click", () => {
