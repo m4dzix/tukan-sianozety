@@ -130,7 +130,7 @@
   box-shadow: 1px 1px 2px 2px black;
 }
 
-.hover {
+.hide {
   display: none;
 }
 
@@ -138,9 +138,6 @@
   display: flex;
 }
 
-.popup.close {
-  display: none;
-}
 header {
   height: 85vh;
 }
