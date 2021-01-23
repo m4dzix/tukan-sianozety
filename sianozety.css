@@ -140,6 +140,7 @@
 
 .home {
   height: 85vh;
+  background-image: url("images/slider1.jpg");
 }
 .container {
   margin: 10px;
