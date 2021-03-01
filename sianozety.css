@@ -164,7 +164,10 @@
 .text {
   display: flex;
 }
-
+.content {
+  display: flex;
+  flex-direction: column;
+}
 article p {
   flex-basis: 60%;
   font-size: 18px;
@@ -173,9 +176,9 @@ article p {
 
 article ul {
   display: flex;
-  flex-direction: column;
   text-align: left;
   flex-basis: 50%;
+  flex-direction: column;
 }
 
 .images {
@@ -208,8 +211,8 @@ article ul {
 }
 
 #map {
-  width: 35vh;
-  height: 40vh;
+  width: 45vw;
+  height: 35vh;
   margin: 0 auto;
   color: grey;
   border: 1px solid grey;
