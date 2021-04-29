@@ -187,6 +187,11 @@ footer {
   margin: 5px auto;
 }
 
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .location a {
   font-size: 18px;
   text-decoration: none;
