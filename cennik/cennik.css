@@ -27,6 +27,9 @@ main p {
   font-size: 40px;
   text-align: center;
 }
+.price__header {
+  text-align: left;
+}
 
 .price h3:first-child {
   padding-top: 0;
