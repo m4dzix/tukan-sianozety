@@ -2,13 +2,9 @@ window.onscroll = function () {
   const nav = document.querySelector("nav");
   const top = window.pageYOffset || document.documentElement.scrollTop;
   const isMobile = window.innerWidth > 812;
-  if (top > 100 && isMobile) {
-    nav.style.background = "var(--main-color)";
-    nav.style.lineHeight = "10px";
-    nav.style.padding = "10px";
+  if (top > 50 && isMobile) {
+    nav.style.top = "-50px";
   } else {
-    nav.style.background = "transparent";
-    nav.style.backgroundImage = "linear-gradient(var(--main-color),transparent";
-    nav.style.lineHeight = "10vh";
+    nav.style.top = "0";
   }
 };

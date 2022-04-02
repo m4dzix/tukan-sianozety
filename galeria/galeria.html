@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:image" content="../images/slider2.png">
-  <title>Domki w Sianozetach</title>
-   <link rel="icon" href="../images/toucan2.png">
+  <title>Galeria TUKAN Domki w Sianozetach</title>
+  <link rel="icon" href="../images/toucan2.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -14,88 +14,117 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400, 
   700&display=swap7subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="../style/main.css">
-  <link rel="stylesheet" href="./domki.css">
+  <link rel="stylesheet" href="./galeria.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"
+      integrity="sha512-2R4VJGamBudpzC1NTaSkusXP7QkiUYvEKhpJAxeVCqLDsgW4OqtzorZGpulE3eEA7p++U0ZYmqBwO3m+R2hRjA=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.css"
+      integrity="sha512-QwSfZXX2w9SDWSNBKpEos673LXajTJpYKwtG+zJNP9zHsgRrWtNSx1gKVyB6qWUP4wJ0Hfnk9KJzrB6IKrXmEQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.css"
+      integrity="sha512-/lf2y2d7SFJau+G4TGgXCWJOAUxyDmJD+Tb35CdqoMZAQ8eNX0sgDKISlcxCtGpEAuyb1Q5vGPfB1XMettf0FA=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.js"
+      integrity="sha512-7jpTN4lfrURp41NL7vGXbMP+RPaf/1S5QlNMHLlkdBteN+X5znoT2P8ryCluqePOK79rpDWVPdq1+la4ijhIbQ=="
+      crossorigin="anonymous"
+    ></script>
   <script defer src="../javaScript/hamburger.js"></script>
   <script defer src="../javaScript/slider.js"></script>
   <script defer src="../javaScript/navScroll.js"></script>
+  <script defer src="../javaScript/gallery.js"></script>
+  <script defer src="../javaScript/galleryCottage.js"></script>
+  <script defer src="../javaScript/galleryCaravan.js"></script>
 </head>
 <body>
   <div class="wrapper">
     <div class="burger">
       <i class="fas fa-bars"></i>
     </div>
-    <div class="logo"><a href=../index.html><img src="../images/toucan1.png" alt="Logo strony tukan.pl. Przejdź do strony głównej"></a></div>
+    <div class="logo"><a href="../index.html"><img src="../images/toucan1.png" alt="Logo strony tukan.pl. Przejdź do strony głównej"></a></div>
     <nav>
      <div class="menuDiv">
       <ul class="contactMenuList">
        <li class="contactMenu"><a href="mailto:kasia@tvksmp.pl"><span class="icon">📧</span>E-mail</a></li>
        <li class="contactMenu"><a href="tel:+888753388"><span class="icon">📞</span>Kontakt</a></li>
-     </ul>
+      </ul>
       <ul class="menuList">
         <li class="menu"><a href="../index.html">Strona główna</a></li>
         <li class="menu"><a href="../regulamin/regulamin.html#regulations">Regulamin</a></li>
-        <li class="menu"><a href="domki.html#cottages">Domki</a></li>
-        <li class="menu"><a href="../galeria /galeria.html#gallery">Galeria</a></li>
+        <li class="menu"><a href="../domki/domki.html#cottages">Domki</a></li>
+        <li class="menu"><a href="galeria.html#gallery">Galeria</a></li>
         <li class="menu"><a href="../cennik/cennik.html#priceList">Cennik</a></li>
         <li class="menu"><a href="../kontakt/kontakt.html#contact">Kontakt</a></li>
       </ul>
       </div>
     </nav>
     <header></header>
-    <main id="cottages">
+    <main id="gallery">
       <section class="header">
         <div class='toucan1'>
           <img src="../images/toucan3.png" alt="Ozdobne zdjęcie tukana">
         </div>
-        <h1 class="title">Nasze domki</h1>
+        <h1 class="title" >Galeria</h1>
         <div class='toucan1'>
           <img src="../images/toucan4.png" alt="Ozdobne zdjęcie tukana">
         </div>
-      </section>
-      <section class="mainSection">
-        <h2>Domki holenderske</h2>
-        <div class="caravan clearfix">
-          <div class="photo"><img src="../images/holenderki/big-hol1.png" alt="Domek holenderski"></div>
-          <div class="description">
-            <p>DOMKI HOLENDERSKIE - 4-6 OSOBOWE
-              Domki składają się z:</p>
-              <ul>
-                <li>salonu (TV, radio, rozkładany narożnik, piecyk gazowy),</li>
-                <li>aneksu kuchennego (lodówka, kuchenka, czajnik elektryczny, wyposażenie),</li>
-                <li>sypialni (2 os., 1+1 os; w wersji 6 osobowej trzecia sypialnia 1+1),</li>
-                <li>łazienki (kabina prysznicowa).</li>
-                <li>tarasu z zadaszeniem (zestaw ogrodowy oraz miejsce na grilla)</li>
-              </ul>
-              <p>Pościel dostępna bez dodatkowych opłat. Na wyposażeniu każdego z domków jest także parawan. Do każdego domku przewidziane jest jedno miejsce parkingowe na terenie ośrodka. Dla najmłodszych gości na posesji znajduje się bezpieczny plac zabaw.
-              </p>
-            <div class="galery">
-              <a href="../galeria /galeria.html">Zobacz galerię</a>
-            </div>
-          </div>
+      </section>      
+      <section class ="main">
+        <h2>Domki holenderskie</h2>
+          <div class="picture caravans">
         </div>
       </section>
-      <section class ="mainSection">
-        <h2 class="">Domki kempingowe</h2>
-        <div class="lodge clearfix">
-          <div class="photo"><img src="../images/domki/big-domki1.png" alt="Domek letniskowy"></div>
-          <div class="description">
-            <p>DOMKI KEMPINGOWE - MAX 4 OSOBOWE
-            Domki kempingowe składają się z:</p>
-            <ul>
-              <li>pokoju (2x rozkładana wersalka dwuosobowa, stolik, siedziska, TV)</li>
-              <li>kuchni (kuchenka, lodówka, wyposażenie)</li>
-              <li>zadaszonego tarasu (zestaw ogrodowy, miejsce na grilla)</li>
-            </ul>
-          <p>
-            Na wyposażeniu jest pościel, standardowe wyposażenie kuchenne oraz parawan. Łazienka jest wspólna dla dwóch domków i znajduje się obok nich. Do każdego mieszkania przewidziane jest jedno miejsce parkingowe na terenie ośrodka. Dla najmłodszych gości na posesji znajduje się bezpieczny plac zabaw.</p>
-            <div class="galery">
-              <a href="../galeria /galeria.html">Zobacz galerię</a>
-            </div>
-          </div>
+      <section class ="main">
+        <h2>Domki letniskowe</h2>
+        <div class="picture cottages">
         </div>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
       </section>
     </main>
-    <footer>
+      <footer>
       <div class="meet-us">
         <h3 class="footer__header">Tukan - odwiedź nas!!</h3>
         <p>Zapraszamy do miłego zakątka nad Polskie morze - miejscowość oddalona 10 km od Kołobrzegu Razem z Ustroniem
@@ -104,7 +133,7 @@
       <div class="here-we-are">
         <h3 class="footer__header">Tu jesteśmy</h3>
         <ul class="footer__list">
-          <li class="footer__item">Wynajem domków letniskowych TUKAN</li>
+             <li class="footer__item">Wynajem domków letniskowych TUKAN</li>
           <li class="footer__item">ul. Wschodnia 3</li>
           <li class="footer__item">78-111 Sianożęty POLSKA</li>
           <li class="footer__item"><a class="footer__link" href="tel:888-753-388">tel. 888-753-388</a></li>
