@@ -1,8 +1,15 @@
 html {
   box-sizing: border-box;
-  --main-color: rgb(192, 124, 34);
-  --main-white: rgb(245, 245, 245);
   font-family: "Lato", sans-serif;
+  --main-color: rgb(229, 160, 82);
+  --main-modeColor: rgb(245, 245, 245);
+  --font: rgb(10, 10, 10);
+  --font-hover: rgb(69, 68, 68);
+  --lighter-font: rgb(34, 34, 34);
+  --lighter-font-hover: rgb(80, 80, 80);
+  --border: rgb(165, 42, 42);
+  --border-hover: rgb(182, 182, 182);
+  --box-schadow: rgba(0, 0, 0, 0.5);
 }
 
 *,
@@ -11,15 +18,33 @@ html {
   box-sizing: inherit;
 }
 
+.darkMode {
+  --main-color: rgb(18, 15, 12);
+  --main-modeColor: rgb(34, 34, 34);
+  --font: rgb(221, 221, 221);
+  --font-hover: rgb(186, 184, 184);
+  --border: rgb(17, 17, 17);
+  --border-hover: rgb(100, 100, 100);
+}
+
+body {
+  color: var(--font);
+}
+
 a {
   text-decoration: none;
-  color: black;
+  color: var(--font);
+  transition: 0.5s;
 }
+a:hover {
+  color: var(--font-hover);
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--main-white);
+  background-color: var(--main-modeColor);
 }
 
 h1,
@@ -38,7 +63,7 @@ header,
   background-repeat: no-repeat;
   background-size: cover;
   margin: 50px auto 0;
-  box-shadow: 8px 8px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 8px 2px 2px var(--box-shadow);
   transition: 2s;
 }
 
@@ -50,11 +75,11 @@ nav {
   width: 100%;
   height: 100px;
   flex-basis: 2;
-  top: 0;
+  top: 10px;
   left: 0;
   padding: 0 10vw;
   list-style: none;
-  background-color: var(--main-white);
+  background-color: var(--main-modeColor);
   opacity: 0.7;
   transition: 1s;
 }
@@ -81,14 +106,24 @@ nav {
   flex-direction: column;
   justify-content: flex-end;
 }
+
 .contactMenuList {
   display: flex;
   list-style: none;
   justify-content: flex-end;
 }
+.changeMode {
+  width: 44px;
+  padding: 1px 3px;
+  text-align: left;
+  border: 2px solid var(--font-hover);
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 1s;
+}
 .contactMenu {
   display: block;
-  color: #222;
+  color: var(--lighter-font);
   text-decoration: none;
   font-size: 15px;
   margin: 0 8px;
@@ -98,7 +133,7 @@ nav {
   margin: 0 8px;
 }
 .contactMenu:hover {
-  color: #333;
+  color: var(--lighter-font-hover);
 }
 
 .menuList {
@@ -109,7 +144,6 @@ nav {
 
 .menu a {
   display: block;
-
   text-decoration: none;
   font-size: 20px;
   margin: 0 10px;
@@ -167,7 +201,6 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  color: black;
   overflow: hidden;
   flex-grow: 1;
   width: 100%;
@@ -185,7 +218,7 @@ footer {
   font-size: 25px;
   padding: 10px;
   margin-bottom: 25px;
-  box-shadow: 0px 3px 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 1px 1px var(--box-schadow);
   text-align: center;
   text-transform: uppercase;
 }
@@ -214,13 +247,7 @@ footer {
 .location a {
   font-size: 18px;
   text-decoration: none;
-  color: black;
   transition: 0.5s;
-}
-
-.location a:hover {
-  color: #555;
-  border-bottom: 1px solid;
 }
 
 .last-info {
@@ -237,7 +264,6 @@ footer {
   margin: 0;
 }
 .last-info p a {
-  color: black;
   font-weight: bold;
   text-decoration: none;
 }
@@ -288,7 +314,7 @@ footer {
   }
 
   .burger p {
-    color: black;
+    color: var(--font);
     font-size: 20px;
     line-height: 35px;
     margin-left: 35px;
@@ -393,7 +419,7 @@ footer {
   }
 
   .burger p {
-    color: black;
+    color: var(--font);
     font-size: 20px;
     line-height: 35px;
     margin-left: 35px;
@@ -507,7 +533,7 @@ footer {
   }
 
   .burger p {
-    color: black;
+    color: var(--font);
     font-size: 20px;
     line-height: 35px;
     margin-left: 35px;

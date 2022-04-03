@@ -5,6 +5,6 @@ window.onscroll = function () {
   if (top > 50 && isMobile) {
     nav.style.top = "-50px";
   } else {
-    nav.style.top = "0";
+    nav.style.top = "10px";
   }
 };

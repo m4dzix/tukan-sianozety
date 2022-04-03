@@ -28,21 +28,14 @@
   text-align: left;
 }
 
-.listItem__link {
-  color: black;
-  text-decoration: none;
-  transition: 0.5s;
-}
-
 .listItem__link:hover {
-  color: #555;
   border-bottom: 1px solid;
 }
 
 #map {
   height: 100%;
-  color: grey;
-  border: 1px solid grey;
+  color: var(--font-hover);
+  border: 1px solid var(--font-hover);
   display: flex;
   align-items: center;
   justify-content: center;

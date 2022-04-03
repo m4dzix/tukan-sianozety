@@ -15,14 +15,14 @@ main h2 {
 }
 
 .picture img {
-  border: 1px solid grey;
+  border: 1px solid var(--font-hover);
   margin: 0 3px;
   transition: 0.5s;
   text-align: center;
 }
 
 .picture img:hover {
-  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 2px 3px 3px var(--box-schadow);
   transform: scale(1.1);
 }
 

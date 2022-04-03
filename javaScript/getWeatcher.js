@@ -1,6 +1,6 @@
 {
   const tepmeratureValue = document.querySelector(".weatcherValue");
-
+  tepmeratureValue.style.color = "var(--font)";
   fetch(
     "http://dataservice.accuweather.com/currentconditions/v1/2691176?apikey=kX0ZFeIIqgMOmyviHNe2A0Fy0gSmk2MM&language=pl-pl",
     {

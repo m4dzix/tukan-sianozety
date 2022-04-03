@@ -18,13 +18,7 @@
   margin: 10px;
   list-style-type: decimal;
 }
-.rules a {
-  color: black;
-  text-decoration: none;
-}
-.rules a:hover {
-  color: grey;
-}
+
 .show {
   display: flex;
 }
