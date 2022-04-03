@@ -143,16 +143,21 @@ nav {
 }
 
 .menu a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   font-size: 20px;
   margin: 0 10px;
-  transition: 1s;
+  padding-bottom: 5px;
   font-weight: bold;
+  background-image: linear-gradient(var(--font-hover), var(--font-hover));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 calc(100% - 0px);
+  transition: background-size 0.5s;
 }
 
 .menu a:hover {
-  transform: scale(1.1);
+  background-size: 100% 2px;
 }
 
 .burger {
