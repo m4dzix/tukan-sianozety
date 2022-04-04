@@ -1,6 +1,5 @@
-const burger = document.querySelector(".burger .fas");
+const burger = document.querySelector(".burger .fa-bars");
 const nav = document.querySelector("nav");
-const body = document.querySelector("body");
 
 burger.addEventListener("click", () => {
   nav.classList.toggle("show");
