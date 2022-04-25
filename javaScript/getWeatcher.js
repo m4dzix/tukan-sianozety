@@ -10,9 +10,9 @@
     .then((response) => response.json())
     .then((result) => {
       if (result[0].Temperature.Metric.UnitType < 18) {
-        tepmeratureValue.innerHTML = `<span class="icon">🌤️</span>${result[0].Temperature.Metric.UnitType}°C`;
+        tepmeratureValue.innerHTML = `<span class="icon">🌤️</span>${result[0].Temperature.Metric.Value}°C`;
       } else {
-        tepmeratureValue.innerHTML = `<span class="icon">☀️</span>${result[0].Temperature.Metric.UnitType}°C`;
+        tepmeratureValue.innerHTML = `<span class="icon">☀️</span>${result[0].Temperature.Metric.Value}°C`;
       }
     })
 
