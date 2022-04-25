@@ -32,7 +32,6 @@ setTimeout(() => {
   localStorage.clear();
 }, 1000 * 60 * 60 * 24);
 
-console.log(clicked);
 xSign.addEventListener("click", () => {
   cookie.classList.add("hide");
 });
