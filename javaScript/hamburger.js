@@ -1,4 +1,4 @@
-const burger = document.querySelector(".burger .fa-bars");
+const burger = document.querySelector(".burger");
 const nav = document.querySelector("nav");
 
 burger.addEventListener("click", () => {
